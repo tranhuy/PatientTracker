@@ -1,1 +1,1 @@
-export const apiBaseUrl = 'https://app-patient-tracker.herokuapp.com/api';
+export const apiBaseUrl = 'https://api-patient-tracker.herokuapp.com/api';

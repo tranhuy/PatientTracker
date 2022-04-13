@@ -3,12 +3,14 @@ import cors from 'cors';
 import diagnosesRouter from './routes/diagnoses';
 import patientsRouter from './routes/patients';
 
+require('dotenv').config();
+
 const app = express();
 
 app.use(express.json());
 app.use(cors());
 
-const PORT = 3002;
+const PORT = process.env.PORT || 3002;
 
 app.get('/api/ping', (_req, res) => {
     res.send('pong!');

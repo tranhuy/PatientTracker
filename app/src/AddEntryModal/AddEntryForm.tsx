@@ -163,10 +163,12 @@ const AddEntryForm = ({ onSubmit, onCancel, setModalTitle }: Props) => {
                                     <label>Sick Leave</label>
                                     <Field 
                                         name="occHealthCareEntryInitValues.sickLeave.startDate"
+                                        placeholder="YYYY-MM-DD"
                                         component={TextField}
                                     />
                                     <Field 
                                         name="occHealthCareEntryInitValues.sickLeave.endDate"
+                                        placeholder="YYYY-MM-DD"
                                         component={TextField}
                                     />
                                 </div>

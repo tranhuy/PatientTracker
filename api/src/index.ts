@@ -1,9 +1,12 @@
 import express from 'express';
 import cors from 'cors';
+import hsp from 'heroku-self-ping';
 import diagnosesRouter from './routes/diagnoses';
 import patientsRouter from './routes/patients';
 
 require('dotenv').config();
+
+hsp(process.env.APP_URL);
 
 const app = express();
 

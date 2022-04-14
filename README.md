@@ -15,7 +15,7 @@ A basic patient record keeping application that offers the following features:
 - New data is persisted in server memory and will be lost after server reboot
 - Project uses typescript to enforce data types
 - Forms were made using Formik library
-- Statement management is accomplished using useReducer and useState hooks and Context API
+- State management is accomplished using useReducer and useState hooks and Context API
 
 ## Requirements
 

@@ -8,7 +8,7 @@ const cors_1 = __importDefault(require("cors"));
 const diagnoses_1 = __importDefault(require("./routes/diagnoses"));
 const patients_1 = __importDefault(require("./routes/patients"));
 require('dotenv').config();
-const http = require('http');
+//const http = require('http');
 const app = (0, express_1.default)();
 app.use(express_1.default.json());
 app.use((0, cors_1.default)());
@@ -21,8 +21,8 @@ app.use('/api/patients', patients_1.default);
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
     // issues ping to server to prevent Heroku dynos from sleeping
-    setInterval(() => {
-        http.get(process.env.APP_URL);
-        console.log(`Pinging ${process.env.APP_URL}`);
-    }, 600000);
+    // setInterval(() => {
+    //     http.get(process.env.APP_URL);
+    //     console.log(`Pinging ${process.env.APP_URL}`);
+    // }, 600000);
 });

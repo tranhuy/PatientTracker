@@ -21,7 +21,7 @@ app.use('/api/patients', patientsRouter);
 
 app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
-    // issues ping to server to prevent Heroku dynos from sleeping
+    // issues ping to server to prevent Heroku dynos from sleeping.
     // setInterval(() => {
     //     http.get(process.env.APP_URL);
     //     console.log(`Pinging ${process.env.APP_URL}`);
